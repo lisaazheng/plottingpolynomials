@@ -8,6 +8,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+coeff1 = input("input highest coefficient")
+coeff2 = input("input second coefficient")
+coeff3 = input("input lowest coefficient")
+
 xlist = []
 ylist = []
 
@@ -19,7 +23,7 @@ def polynomial_func():
     print(x)
     xlist.append(x)
 
-    result = 7*(x**3) + 3*(x**2) - 10*x
+    result = (coeff1)*(x**3) + (coeff2)*(x**2) + (coeff3)*x
     print("Result: ", result)
     ylist.append(result)
 
